@@ -23,7 +23,7 @@ Deploys a `quotes` microservice with two versions (`v1` and `v2`) to Kubernetes,
 | **Service Mesh** | Istio |
 | **Orchestration** | Kubernetes (Minikube) |
 | **Observability** | Kiali, Grafana, Prometheus |
-| **Application** | Node.js microservice |
+| **Application** | Javascript Microservice |
 | **IaC** | YAML manifests |
 
 ---
@@ -77,7 +77,7 @@ Access the app at `http://127.0.0.1/`
 
 ---
 
-## 💼 DevOps Skills Demonstrated
+## 💼 Skills Demonstrated
 
 - **Service Mesh Architecture** — Istio control/data plane concepts  
 - **Progressive Delivery** — Canary deployments without downtime  
