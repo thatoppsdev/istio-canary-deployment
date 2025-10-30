@@ -52,12 +52,12 @@ Access the app at `http://127.0.0.1/`
 ## 📊 Live Traffic Management
 
 ### Kiali Dashboard — Service Mesh Visualization
-![Istio Traffic Distribution](screenshots/istiodash.png)
-*Real-time view of traffic split between quotes v1 and v2*
+![Istio Dashboard](screenshots/istiodash.png)
+*System overview at a glance*
 
 ### Traffic Split Configuration
-![Canary Deployment](screenshots/canary.png)
-*Progressive rollout: 90/10 → 50/50 → 0/100 traffic distribution*
+![Istio Traffic Distribution](screenshots/canary.png)
+*Real-time view of traffic split between quotes v1 and v2*
 
 **Demo Flow:**
 1. Launch Kiali: `istioctl dashboard kiali`
