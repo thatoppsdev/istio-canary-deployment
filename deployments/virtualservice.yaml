@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: quotes
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - quotes-gateway
+  http:
+  - route:
+    - destination:
+        host: quotes
+        subset: v1
+      weight: 90
+    - destination:
+        host: quotes
+        subset: v2
+      weight: 10

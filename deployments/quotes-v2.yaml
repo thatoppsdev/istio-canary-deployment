@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quotes-v2
+  labels:
+    app: quotes
+    version: v2
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: quotes
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: quotes
+        version: v2
+    spec:
+      containers:
+      - name: quotes
+        image: thatoppsdev/quotes-app:v5
+        ports:
+        - containerPort: 3000
